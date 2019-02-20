@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-BoldOblique;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fswiss\fcharset0 Helvetica-Oblique;\f4\fnil\fcharset0 AndaleMono;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cspthree\c100000\c100000\c100000;\cspthree\c0\c0\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i\b\fs28 \cf2 -i 
+\f1\i0\b0 \cf0 instalar\'e1 los paquetes\
+
+\f0\i\b -v
+\f2\i0  
+\f1\b0 realiza el volcano por \
+
+\f0\i\b -l valor
+\f3\b0  l
+\f1\i0 fc para volcano plot\
+
+\f0\i\b -p valor
+\f1\i0\b0  pvalue para volcano plot\
+
+\f0\i\b -e valor 
+\f1\i0\b0 lfc sobreexpresed genes\
+
+\f0\i\b -x valor
+\f1\i0\b0  pvalue para sobreexpresed genes\
+
+\f0\i\b -s
+\f1\i0\b0  realizar y guardar plots de curvas de supervivencia\
+
+\f0\i\b -f valor 
+\f1\i0\b0 n\'famero de variables devueltas por los filtros chi y forest\
+
+\f0\i\b -c valor 
+\f1\i0\b0 numero de variables devueltas por la b\'fasqueda exhaustiva de Cox\
+
+\f0\i\b -r valor
+\f1\i0\b0  k para CV de Lasso y Ridge (no se recomienda m\'e1s de 2, es muuuy lento)\
+
+\f0\i\b -k valor
+\f1\i0\b0  k para CV de modelos DT, GLM, NNET\
+
+\f0\i\b -t all/over/under 
+\f1\i0\b0 tipo de expresi\'f3n de genes para an\'e1lisis funcional\
+
+\f0\i\b -a valor
+\f1\i0\b0  lfc para an\'e1lisis funcional\
+
+\f0\i\b -b valor
+\f1\i0\b0  pvalue para an\'e1lisis funcional\
+\
+Ejemplo para probarlo:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs24 \cf3 \cb4 \CocoaLigature0 ./flujo_scriptFinal.sh -v -l 4 -p 0.001 -e 4 -x 0.001 -s -f 70 -c 20 -r 2 -k 10 -t all -a 4 -b 0.001\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf0 \cb1 \CocoaLigature1 \
+En el \'faltimo punto de an\'e1lisis funcional, en algunas de las ejecuciones no funciona bien la conexi\'f3n con biomaRt y la funci\'f3n 
+\f3\i getBM(attributes = c("entrezgene", "hgnc_symbol"), mart=mart)  
+\f1\i0 da error.}
