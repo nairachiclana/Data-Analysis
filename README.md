@@ -13,6 +13,6 @@
 
 - **Survival Analysis-Breast Cancer** A complete report of the analysis of Breast Cancer clinical data (from TCGA) using Survival Analysis and Statistics tools.
 
-- **Statistics from gene expressions** Replicating an application from a paper find statistics from a desired gene.
+- **Statistics from gene expressions** Replicating an application from a paper find statistics from a given gene.
 
 
